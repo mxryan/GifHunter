@@ -1,0 +1,61 @@
+.container {
+  width: 90%;
+}
+
+header {
+  background-color: #ca8642;
+  display: flex;
+  justify-content: space-between;
+}
+
+#title {
+  width:35%;
+}
+
+#search {
+  width:35%;
+}
+
+#main {
+  display: flex;
+}
+
+#left-panel {
+  
+  background-color: #2468ac;
+  width: 20%;
+  
+}
+
+#btn-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-button {
+  display: block;
+}
+
+#right-panel {
+  
+  background-color: #35a9bd;
+  width: 80%;
+  
+}
+
+#gif-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gif-container {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.gif {
+  max-width:100%;
+  height:auto;
+  
+}
