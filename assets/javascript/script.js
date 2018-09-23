@@ -4,6 +4,7 @@ var btnDisplay = document.querySelector("#btn-area");
 var searchBar = document.querySelector("#search-bar");
 var subBtn = document.querySelector("#submit-btn");
 var gifDisplay = document.querySelector("#gif-area");
+var clickToGifDisplay = document.querySelector("h5");
 
 function grabGIFs(searchTerm) {
   var baseUrl = "https://api.giphy.com/v1/gifs/search?q=";
@@ -36,6 +37,7 @@ function addBtn(searchTerm) {
 }
 
 function addGif(stillURL, gifURL, i) {
+  clickToGifDisplay.style.display = "block";
   if (i === 0) {
     while (gifDisplay.firstChild) {
       gifDisplay.removeChild(gifDisplay.firstChild);
