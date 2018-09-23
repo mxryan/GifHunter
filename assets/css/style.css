@@ -1,18 +1,12 @@
-/* 
-#5095aa
-#145f77
-#7eddc0
-#e18c87
-#aa5069  */
 @import url('https://fonts.googleapis.com/css?family=Mina');
-
-
+@import url('https://fonts.googleapis.com/css?family=Boogaloo');
 
 h2 {
   font-size: 250%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 h3 {
   font-size: 160%;
   margin-top: 10px;
@@ -25,7 +19,7 @@ h5 {
 
 html {
   background-image: linear-gradient(to bottom right, #145f77, #7eddc0);
-  font-family: 'Mina', sans-serif;
+  font-family: 'Boogaloo', cursive;
 }
 
 .container {
@@ -72,6 +66,7 @@ h1 {
   background-color: black;
   color: #7eddc0;
   font-size:150%;
+  font-family: 'Boogaloo', cursive;
 }
 
 #submit-btn:hover {
@@ -113,6 +108,8 @@ h1 {
   background-color: black;
   color: #e18c87;
   font-size: 150%;
+  font-family: 'Boogaloo', cursive;
+
 }
 
 .search-button:hover {
@@ -143,5 +140,5 @@ h1 {
 .gif {
   max-width:100%;
   height:auto;
-  cursor: alias;
+  cursor: pointer;
 }
