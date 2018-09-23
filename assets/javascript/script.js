@@ -8,22 +8,19 @@ var gifDisplay = document.querySelector("#gif-area");
 function grabGIFs(searchTerm) {
   var baseUrl = "http://api.giphy.com/v1/gifs/search?q=";
   var apiKey = "&api_key=VxlTnIrmRXycSQQNUh8bYJ7vrKAxBDSB";
-  var query = baseUrl + searchTerm + apiKey + "&limit=9";
+  var query = baseUrl + searchTerm + apiKey + "&limit=18";
   var req = new XMLHttpRequest();
   req.onload = () => {
     var data = JSON.parse(req.responseText);
-    console.log(data.data);
-
     for (var i = 0; i < data.data.length; i++) {
       var x = data.data[i].images
       addGif(x.original_still.url, x.original.url, i);
     }
-
   };
   req.open("GET", query, true);
   req.send();
 }
-grabGIFs("turtle");
+
 
 function addBtn(searchTerm) {
   var btn = document.createElement("button");
@@ -38,12 +35,7 @@ function addBtn(searchTerm) {
   btnDisplay.appendChild(btn);
 }
 
-function addGIFS(gifArr) {
-
-}
-
 function addGif(stillURL, gifURL, i) {
-  //break this into separate 'remove' fn?
   if (i === 0) {
     while (gifDisplay.firstChild) {
       gifDisplay.removeChild(gifDisplay.firstChild);
@@ -64,16 +56,12 @@ function addGif(stillURL, gifURL, i) {
 }
 
 function swap() {
-  //swaps between still and gif
-
   var d = this.dataset;
   this.src == d.stillURL ? this.src = d.gifURL : this.src = d.stillURL;
-
-
-
 }
 
-subBtn.addEventListener("click", () => {
+subBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   if (searchBar.value) {
     addBtn(searchBar.value);
   }

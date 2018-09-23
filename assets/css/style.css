@@ -1,19 +1,79 @@
+/* 
+#5095aa
+#145f77
+#7eddc0
+#e18c87
+#aa5069  */
+@import url('https://fonts.googleapis.com/css?family=Mina');
+h1 {
+  font-size: 300%;
+}
+h2 {
+  font-size: 250%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 160%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+html {
+  background-image: linear-gradient(to bottom right, #145f77, #7eddc0);
+  font-family: 'Mina', sans-serif;
+}
+
 .container {
-  width: 90%;
+  width: 95%;
+  margin: auto;
+ 
 }
 
 header {
-  background-color: #ca8642;
+  background-color: #aa5069;
+  background-image: linear-gradient(to bottom right, #aa5069, #e18c87);
+  
+}
+
+#header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
 }
 
 #title {
-  width:35%;
+  display: inline-block;
 }
 
 #search {
-  width:35%;
+  display: inline-block;
+}
+
+#search-bar {
+  border: 1px solid #7eddc0;
+  background-color: #145f77;
+  color: white;
+}
+
+#submit-btn {
+  border: 1px solid #145f77;
+  background-color: black;
+  color: #7eddc0;
+}
+
+#header-img-cont {
+  display: inline-block;
+  width:150px;
+}
+
+#header-img-cont img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #7eddc0;
 }
 
 #main {
@@ -22,8 +82,8 @@ header {
 
 #left-panel {
   
-  background-color: #2468ac;
   width: 20%;
+  min-height: 600px;
   
 }
 
@@ -34,12 +94,17 @@ header {
 
 .search-button {
   display: block;
+  border: 1px solid #145f77;
+  background-color: black;
+  color: #e18c87;
+  font-size: 150%;
 }
 
 #right-panel {
   
-  background-color: #35a9bd;
   width: 80%;
+  min-height: 600px;
+  text-align: center;
   
 }
 
