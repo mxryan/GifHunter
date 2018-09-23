@@ -6,7 +6,7 @@
 #aa5069  */
 @import url('https://fonts.googleapis.com/css?family=Mina');
 h1 {
-  font-size: 300%;
+  font-size: 450%;
 }
 h2 {
   font-size: 250%;
@@ -69,14 +69,15 @@ header {
 
 #header-img-cont {
   display: inline-block;
-  width:150px;
+  width:200px;
+  margin-top: 5px;
 }
 
 #header-img-cont img {
   max-width: 100%;
   height: auto;
   border-radius: 50%;
-  border: 3px solid #7eddc0;
+  border: 3px solid black;
 }
 
 #main {
