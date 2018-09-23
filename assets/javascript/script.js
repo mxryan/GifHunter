@@ -6,7 +6,7 @@ var subBtn = document.querySelector("#submit-btn");
 var gifDisplay = document.querySelector("#gif-area");
 
 function grabGIFs(searchTerm) {
-  var baseUrl = "http://api.giphy.com/v1/gifs/search?q=";
+  var baseUrl = "https://api.giphy.com/v1/gifs/search?q=";
   var apiKey = "&api_key=VxlTnIrmRXycSQQNUh8bYJ7vrKAxBDSB";
   var query = baseUrl + searchTerm + apiKey + "&limit=18";
   var req = new XMLHttpRequest();
