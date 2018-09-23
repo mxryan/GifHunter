@@ -17,6 +17,7 @@ h3 {
   font-size: 160%;
   margin-top: 10px;
   margin-bottom: 10px;
+  color: white;
 }
 
 
@@ -56,12 +57,14 @@ header {
   border: 1px solid #7eddc0;
   background-color: #145f77;
   color: white;
+  font-size: 150%;
 }
 
 #submit-btn {
   border: 1px solid #145f77;
   background-color: black;
   color: #7eddc0;
+  font-size:150%;
 }
 
 #header-img-cont {
